@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: Water – Student Campaign</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      background: url('YOUR_IMAGE_URL_HERE') no-repeat center center/cover;
+      min-height: 100vh;
+      padding: 0;
+      transition: background 0.5s ease-in-out;
+    }
+    .header {
+      position: sticky;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(6px);
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 20px 40px;
+      z-index: 1000;
+      transition: all 0.3s ease-in-out;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .logo img:hover {
+      transform: scale(1.1);
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+      animation: fadeIn 1.2s ease-in;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin: 0 0 20px;
+      max-width: 600px;
+      transition: color 0.3s ease-in-out;
+      color: #FFC907;
+    }
+    h1:hover {
+      color: #FF902A;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      max-width: 600px;
+      color: #FFFFFF;
+    }
+    .cta {
+      background-color: #FFC907;
+      color: black;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .cta:hover {
+      background-color: #FF902A;
+      transform: scale(1.05) translateY(-2px);
+    }
+    @media (max-width: 1024px) {
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 768px) {
+      .main {
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+      }
+      .logo {
+        justify-content: center;
+      }
+      h1 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 15px;
+      }
+      .cta {
+        width: 100%;
+        padding: 12px;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="https://www.charitywater.org/assets/images/logos/charity-water-logo.svg" alt="Charity Water Logo">
+      <span>charity: water</span>
+    </div>
+  </header>
+  <main class="main">
+    <h1>Do Good That’s Unfiltered and Uncomplicated</h1>
+    <p>You can fund clean water in minutes — and see exactly where 100% of your donation goes.</p>
+    <a class="cta" href="#">Donate Here</a>
+  </main>
+</body>
+</html>
